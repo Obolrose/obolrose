@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBOLROSE — Artist</title>
+    <style>
+        :root{--bg:#0f0f10;--accent:#e07aaf;--muted:#bdbdbd;--card:#121214;--obo-pink:#D60270;--lr-magenta:#9B4F96;--ose-blue:#0038A8}
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#D60270 0%,#D60270 33%,#9B4F96 33%,#9B4F96 66%,#0038A8 66%,#0038A8 100%);color:#eee;line-height:1.5}
+        header{padding:2rem 1rem;text-align:center;border-bottom:1px solid rgba(255,255,255,.04);background:#000}
+        .brand{font-size:2.75rem;letter-spacing:.06em;font-weight:700;display:inline-block}
+        .brand .obo{color:var(--obo-pink)}
+        .brand .lr{color:var(--lr-magenta)}
+        .brand .ose{color:var(--ose-blue)}
+        nav{display:flex;justify-content:center;gap:1.25rem;padding:.75rem 1rem;background:var(--card)}
+        nav a{color:#ddd;text-decoration:none;font-weight:600}
+        main{max-width:1100px;margin:2rem auto;padding:0 1rem}
+        .hero{display:grid;grid-template-columns:1fr 320px;gap:2rem;align-items:center}
+        .hero > div:first-child{background:var(--card);padding:1.5rem;border-radius:8px}
+        .hero h1{font-size:2.25rem;margin-bottom:.5rem}
+        .hero p{color:var(--muted);max-width:60ch}
+        .avatar{background:linear-gradient(135deg,var(--accent),#7ad5ff);height:320px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:rgba(0,0,0,.85);font-weight:700}
+        .section{margin-top:3rem}
+        #about{background:var(--card);padding:1.5rem 1rem;border-radius:8px;margin:1.5rem 0}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+        .card{background:var(--card);padding:1rem;border-radius:8px;border:1px solid rgba(255,255,255,.03);text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:start}
+        .card .title{font-weight:700;margin-bottom:.5rem}
+        .thumb{width:100%;height:120px;object-fit:cover;border-radius:6px;margin-bottom:.75rem;background:#222}
+        .port-link{position:relative;transition:opacity 0.2s}
+        .port-link:hover{opacity:0.9}
+        .preview-btn{display:inline-flex;align-items:center;gap:.4rem;margin-top:.5rem;padding:.25rem .5rem;background:var(--accent);color:#000;border:none;border-radius:4px;cursor:pointer;font-weight:600;font-size:.8rem;text-decoration:none}
+        .preview-btn:hover{opacity:0.9}
+        .player-modal{display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1000;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:2rem;box-shadow:0 8px 32px rgba(0,0,0,0.5)}
+        .player-modal.open{display:block}
+        .player-modal .close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:#fff;cursor:pointer;font-size:1.5rem}
+        .player-modal iframe{width:380px;height:152px}
+        footer{margin-top:3rem;padding:2rem 1rem;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,.04)}
+        a.social{color:var(--accent);text-decoration:none;margin-right:.5rem}
+        .music-links{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-top:.4rem}
+        .music-links a{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .5rem;border-radius:8px;background:rgba(255,255,255,.03);text-decoration:none;color:inherit}
+        .music-links svg{width:22px;height:22px;display:block}
+        #social-media img, #social-media svg {
+            filter: invert(1) brightness(2);
+        }
+        @media (max-width:760px){.hero{grid-template-columns:1fr}.avatar{height:200px}}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand"><span class="obo">OBO</span><span class="lr">LR</span><span class="ose">OSE</span></div>
+        <div style="color:var(--muted);margin-top:.4rem">ARTIST • PRODUCER • COMPOSER • DJ • GRAPHIC DESIGNER • WRITER • KARAOKE SINGER • REMOTE WORKER</div>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="home" class="hero">
+            <div>
+                <h1>OBOLROSE</h1>
+                <p> is an independent artist from Nigeria Exploring sound, texture, art, and visuals through music and mixed media. OBOLROSE thrives as a self taught artist, producer, composer, writer, and DJ. He is a creative and an author, a lover of Art and it's serenity. This site showcases recent projects, previews, and ways to commission or collaborate. Check out OBOLROSE on his social media platforms.</p>
+            </div>
+           <div class="avatar">
+  <img src="image-10.jpg" alt="OBOLROSE preview" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+</div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <div class="grid" style="margin-top:1rem">
+                <!-- wrap each card in a link; change href when adding real links -->
+                <a class="card port-link" href="https://open.spotify.com/album/5ZDsp0FpHi4cTSC75SvKz4?si=YejuFuNyTrmj17JdLvOZcQ">
+                    <img class="thumb" alt="preview">
+                    <div class="title">NEW DANCE</div>
+                    <div style="color:var(--muted)">Explore NEW DANCE by OBOLROSE</div>
+                    <button class="preview-btn" onclick="event.stopPropagation();event.preventDefault();openPlayer('5ZDsp0FpHi4cTSC75SvKz4')" type="button">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        Preview
+                    </button>
+                </a>
+                <a class="card port-link" href="https://open.spotify.com/album/1ixo2ziyRRxHA4c81zuUJd?si=bOQAG4t4SleM5PcMT2Zo7A">
+                    <img class="thumb" alt="preview">
+                    <div class="title">FIND OUR WAY BACK</div>
+                    <div style="color:var(--muted)">Explore FIND OUR WAY BACK by OBOLROSE</div>
+                    <button class="preview-btn" onclick="event.stopPropagation();event.preventDefault();openPlayer('1ixo2ziyRRxHA4c81zuUJd')" type="button">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        Preview
+                    </button>
+                </a>
+                <a class="card port-link" href="https://open.spotify.com/album/5DzOwPhddUh5n2LMTRYx3K">
+                    <img class="thumb" alt="preview">
+                    <div class="title">KUNŌ</div>
+                    <div style="color:var(--muted)">Explore EP' KUNŌ by OBOLROSE</div>
+                    <button class="preview-btn" onclick="event.stopPropagation();event.preventDefault();openPlayer('5DzOwPhddUh5n2LMTRYx3K')" type="button">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        Preview
+                    </button>
+                </a>
+                <a class="card port-link" href="https://open.spotify.com/album/1YoNtUZ0m0y5sf0RkCaTSM?si=AgLRuGNdS-GW3EC4SwioiQ">
+                    <img class="thumb" alt="preview">
+                    <div class="title">INTROVERTS INDULGENCE</div>
+                    <div style="color:var(--muted)">Explore INTROVERTS INDULGENCE by OBOLROSE</div>
+                    <button class="preview-btn" onclick="event.stopPropagation();event.preventDefault();openPlayer('1YoNtUZ0m0y5sf0RkCaTSM')" type="button">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        Preview
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p style="color:var(--muted);margin-top:.6rem;max-width:70ch">OBOLROSE is primarily a musical artist and producer who also creates visuals and graphic work. Their practice blends composition, sound design, and layered imagery. Available for collaborations, commissions, and performances.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:.6rem">
+                <div class="card" style="flex:1;min-width:220px">
+                    <div class="title">Commission / Booking</div>
+                    <div style="color:var(--muted)">Email: <a class="social" href="mailto:obolrosemain@gmail.com">obolrosemain@gmail.com</a></div>
+                </div>
+                <div class="card" style="flex:1;min-width:220px">
+                    <div class="title">Listen</div>
+                    <div class="music-links">
+                        <a class="social" href="https://open.spotify.com/artist/6wIWA47qaVfvjdTLYZDxYL?si=1BaSBzbZRx2Au4NBllD2iA&nd=1&dlsi=ad75f7777b7549bd" title="Spotify" aria-label="Spotify">
+                            <img src="Primary_Logo_Green_RGB.svg" alt="Spotify" style="width:22px;height:22px;display:block;">
+                            <span style="color:var(--muted);font-size:.95rem">Spotify</span>
+                        </a>
+                        <a class="social" href="https://music.apple.com/ng/artist/obolrose/1783880943?ls" title="Apple Music" aria-label="Apple Music">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#000"/><text x="12" y="14" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">♫</text></svg>
+                            <span style="color:var(--muted);font-size:.95rem">Apple Music</span>
+                        </a>
+                        <a class="social" href="https://www.boomplay.com/share/artist/102181938?srModel=COPYLINK&srList=ANDROID" title="Boomplay" aria-label="Boomplay">
+                            <img src="single-coloured icon on dark background.png" alt="Boomplay" style="width:22px;height:22px;display:block;background:#FF6A00;border-radius:4px;">
+                            <span style="color:var(--muted);font-size:.95rem">Boomplay</span>
+                        </a>
+                        <a class="social" href="https://music.youtube.com/channel/UCiB2V3p0QrbA-2rI0OUppng" title="YouTube Music" aria-label="YouTube Music">
+                            <img src="icons8-youtube-music.svg" alt="YouTube Music" style="width:22px;height:22px;display:block;border-radius:4px;">
+                            <span style="color:var(--muted);font-size:.95rem">YouTube Music</span>
+                        </a>
+                        <a class="social" href="https://music.amazon.com/artists/B0DNNM9MGX/obolrose?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_9mO1x3tcNOCpwjZocdytA5e7h" title="Amazon Music" aria-label="Amazon Music">
+                            <img src="AM_App_Tile_Cyan_Charcoal_Circle.svg" alt="Amazon Music" style="width:22px;height:22px;display:block;border-radius:4px;">
+                            <span style="color:var(--muted);font-size:.95rem">Amazon Music</span>
+                        </a>
+                        <a class="social" href="https://audiomack.com/obolrose" title="Audiomack" aria-label="Audiomack">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#FF6B2D"/><path d="M6 12h3v4H6zm6-2h3v6h-3zm6-2h3v8h-3z" fill="#fff"/></svg>
+                            <span style="color:var(--muted);font-size:.95rem">Audiomack</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="social-media" class="section" style="background:#000;padding:1.5rem 1rem;border-radius:8px;margin:1.5rem auto;width:50%;min-width:320px;max-width:500px;">
+        <h2 style="display:inline-block;min-width:0;max-width:fit-content;padding-right:2.5rem">Social Media</h2>
+        <div class="music-links" style="flex-wrap:wrap;gap:.75rem;margin-top:1rem">
+            <a class="social" href="https://www.instagram.com/iamobolrose" target="_blank" title="Instagram" aria-label="Instagram">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:22px;height:22px;display:block;">
+                <span style="color:var(--muted);font-size:.95rem">Instagram</span>
+            </a>
+            <a class="social" href="https://x.com/iamobolrose" target="_blank" title="Twitter/X" aria-label="Twitter/X">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="Twitter/X" style="width:22px;height:22px;display:block;">
+                <span style="color:var(--muted);font-size:.95rem">Twitter/X</span>
+            </a>
+            <a class="social" href="https://www.youtube.com/@obolrose" target="_blank" title="YouTube" aria-label="YouTube">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" style="width:22px;height:22px;display:block;">
+                <span style="color:var(--muted);font-size:.95rem">YouTube</span>
+            </a>
+            <a class="social" href="https://www.tiktok.com/@obolrose" target="_blank" title="TikTok" aria-label="TikTok">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" style="width:22px;height:22px;display:block;">
+                <span style="color:var(--muted);font-size:.95rem">TikTok</span>
+            </a>
+            <a class="social" href="https://soundcloud.com/Obolrose" target="_blank" title="SoundCloud" aria-label="SoundCloud">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/soundcloud.svg" alt="SoundCloud" style="width:22px;height:22px;display:block;">
+                <span style="color:var(--muted);font-size:.95rem">SoundCloud</span>
+            </a>
+        </div>
+        <div style="color:var(--muted);margin-top:.7rem;font-size:.97rem">Follow OBOLROSE on your favorite social media platforms!</div>
+    </section>
+
+    <footer>
+        <div>&copy; 2026 OBOLROSE</div>
+        <div style="margin-top:.4rem;color:var(--muted)">Built as a simple artist site — replace placeholders with real audio, images & links.</div>
+    </footer>
+    <div class="player-modal" id="playerModal">
+        <button class="close" onclick="closePlayer()">&times;</button>
+        <iframe id="playerFrame" src="" style="border-radius:12px;" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <script>
+        function openPlayer(albumId){
+            const modal=document.getElementById('playerModal');
+            const frame=document.getElementById('playerFrame');
+            frame.src=`https://open.spotify.com/embed/album/${albumId}?utm_source=generator`;
+            modal.classList.add('open');
+        }
+        function closePlayer(){
+            document.getElementById('playerModal').classList.remove('open');
+        }
+        document.getElementById('playerModal').addEventListener('click',function(e){
+            if(e.target===this) closePlayer();
+        });
+        // try to fetch an og:image from each link via a CORS proxy (allorigins)
+        document.addEventListener('DOMContentLoaded', ()=>{
+            document.querySelectorAll('.port-link').forEach(a=>{
+                const thumb=a.querySelector('.thumb');
+                const url=a.href;
+                if(url && url!="#"){
+                    const proxy="https://api.allorigins.win/raw?url="+encodeURIComponent(url);
+                    fetch(proxy).then(r=>{
+                        if(!r.ok) throw new Error('proxy error');
+                        return r.text();
+                    }).then(html=>{
+                        const m=html.match(/<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i);
+                        if(m && m[1]){
+                            thumb.src=m[1];
+                        } else {
+                            thumb.src="https://s2.googleusercontent.com/s2/favicons?sz=128&domain_url="+encodeURIComponent(url);
+                        }
+                    }).catch(_=>{
+                        thumb.src="https://s2.googleusercontent.com/s2/favicons?sz=128&domain_url="+encodeURIComponent(url);
+                    });
+                } else {
+                    thumb.style.background="#444";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
